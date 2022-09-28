@@ -25,7 +25,7 @@ main{
     text-align: center;
     transition: 1s;
 }
-.button1 a{
+.button1 button{
     text-decoration: none;
     padding: 2% 6%;
     font-family: 'Press Start 2P', cursive;
@@ -45,7 +45,7 @@ main{
     text-align: center;
     transition: 1s; 
 }
-.button2 a{
+.button2 button{
     text-decoration: none;
     padding: 2% 6%;
     font-family: 'Press Start 2P', cursive;
@@ -64,6 +64,10 @@ footer{
     height: 100%;
 }
 /*agregar texto*/
+#addText{
+    display: none;
+    height: 80%;
+}
 .textArea{
     position: relative;
     top: 15%;
@@ -98,6 +102,7 @@ footer{
     font-family: 'Press Start 2P', cursive;
     font-weight: 800;
     font-size: 2em;
+    box-shadow: 1px 1px 1em #000000;
 }
 .button3 input:hover{
     transform: scale(1.1);
@@ -110,7 +115,7 @@ footer{
     left: 25%;
     transition: 1s;
 }
-.button4 a{
+.button4 button{
     text-decoration: none;
     padding: 2% 5%;
     background: #000000;
@@ -120,7 +125,134 @@ footer{
     font-weight: 900;
     cursor: pointer;
     border-radius: 5px;
+    box-shadow: 1px 1px 1em #000000;
 }
 .button4:hover{
+    transform: scale(1.1);
+}
+/*grafica*/
+#Grafic{
+    display: none;
+    height: 80%;
+    margin: 5em;
+}
+.canvas{
+   text-align: center;
+   border-radius: 10px;
+   background: #000000;
+   box-shadow: 1px 1px 1em #000000;
+}
+.button5{
+    text-align: center;
+    position: relative;
+    top: 2%;
+    width: 50%;
+    left: 25%;
+    transition: 1s;
+}
+.button5 button{
+    text-decoration: none;
+    padding: 2% 5%;
+    background: #000000;
+    color: #14c704;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1em #000000;
+}
+.button5:hover{
+    transform: scale(1.1);
+}
+#usedLetters{
+    font-weight: 900;
+    font-size: 1.5em;
+    margin: 10px;
+}
+#addWord{
+    text-align: center;
+    margin: 2em;
+}
+.letter{
+    margin: 0 7px;
+    position: relative;
+    text-decoration: underline;
+    font-family: 'Press Start 2P', cursive;
+}
+.hidden{
+    color: transparent;
+    text-decoration-color: #14c704;
+}
+#buttons3{
+    display: none;
+    height: 80%;
+    margin: 5em;
+    text-align: center;
+}
+.text1 p{
+    text-decoration: none;
+    padding: 2% 5%;
+    background: #000000;
+    color: #14c704;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1em #000000;
+}
+.text1:hover{
+    transform: scale(1.1);
+}
+.button6 button{
+    text-decoration: none;
+    padding: 2% 5%;
+    background: #000000;
+    color: #14c704;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1em #000000;
+}
+.button6:hover{
+    transform: scale(1.1);
+}
+#buttons4{
+    display: none;
+    height: 80%;
+    margin: 5em;
+    text-align: center;
+}
+.text2 p{
+    text-decoration: none;
+    padding: 2% 5%;
+    background: #000000;
+    color: #14c704;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1em #000000;
+}
+.text2:hover{
+    transform: scale(1.1);
+}
+.button7 button{
+    text-decoration: none;
+    padding: 2% 5%;
+    background: #000000;
+    color: #14c704;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.5em;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1em #000000;
+}
+.button7:hover{
     transform: scale(1.1);
 }
