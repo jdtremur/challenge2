@@ -151,15 +151,26 @@ const initialLausher = document.querySelector(".button4");
 const noGrafic_and_lausherInitial = document.querySelector(".button8");
 const noGameOver_and_Grafic = document.querySelector(".button6");
 const noGoodGame_and_Grafic = document.querySelector(".button7");
+const startGame = document.querySelector(".button5");
+const textGame = document.querySelector("#textArea");
 
+function block(){
+    document.getElementById("button5").style.display="none";
+    document.getElementById("textArea").style.display="block";
+}
 function lausherText(){
     document.getElementById("buttons").style.display="none";
     document.getElementById("addText").style.display="block";
+    
 }
 function goLausher(){
     document.getElementById("buttons").style.display="block";
     document.getElementById("addText").style.display="none";
     document.getElementById("Grafic").style.display="none";
+    document.getElementById("textArea").style.display="none";
+    document.getElementById("button5").style.display="block";
+    textGame.value="";
+    textGame.focus();
 }
 function noLausher(){
     document.getElementById("buttons").style.display="none";
@@ -190,3 +201,4 @@ initialLausher.onclick = goLausher;
 noGrafic_and_lausherInitial.onclick = goLausher;
 noGameOver_and_Grafic.onclick = noLausher;
 noGoodGame_and_Grafic.onclick = noLausher;
+startGame.onclick = block;

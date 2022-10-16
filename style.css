@@ -4,7 +4,7 @@ body{
 }
 header{
     width: 100%;
-    height: 10vh;
+    height: 10rem;
 }
 .Alura{
     position: relative;
@@ -164,6 +164,9 @@ footer{
 .button5:hover{
     transform: scale(1.1);
 }
+.button5 #button5{
+    display: block;
+}
 #usedLetters{
     font-weight: 900;
     font-size: 1.5em;
@@ -173,8 +176,16 @@ footer{
     text-align: center;
     margin: 2em;
 }
-.button5 .introText{
+.introText #textArea{
     display: none;
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    resize: none;
+    background: #4c023e;
+    border: none;
+    font-size: 30px;
+    text-transform: uppercase;
 }
 .button8{
     text-align: center;
@@ -209,6 +220,9 @@ footer{
     color: transparent;
     text-decoration-color: #14c704;
 }
+#buttons2{
+    padding: 1rem;
+}
 #buttons3{
     display: none;
     height: 80%;
@@ -226,9 +240,6 @@ footer{
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 1px 1px 1em #000000;
-}
-.text1:hover{
-    transform: scale(1.1);
 }
 .button6 button{
     text-decoration: none;
@@ -262,9 +273,6 @@ footer{
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 1px 1px 1em #000000;
-}
-.text2:hover{
-    transform: scale(1.1);
 }
 .button7 button{
     text-decoration: none;
