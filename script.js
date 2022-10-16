@@ -56,10 +56,12 @@ const correctLetter = letter =>{
     }
     if(hits===selectWord.length)goodGame();
 }
-const letterEvent = () =>{
-    let NewLetter2 = textGame.value; 
-    if(NewLetter2.match(/^[a-zñ]$/i) && !usedletters.includes(NewLetter2)){
-        letterInput(NewLetter2);
+const letterEvent = Event =>{
+    let newLetter = Event.key.toUpperCase();
+    textGame.value="";
+    textGame.focus();
+    if(newLetter.match(/^[a-zñ]$/i) && !usedletters.includes(newLetter)){
+        letterInput(newLetter);
     }
 }
 const letterInput = letter =>{
