@@ -286,7 +286,6 @@ footer{
         min-height: 100%;
     }
     #Grafic{
-        display: flex;
         height: 100%;
         margin: 0;
         width: 80%;
