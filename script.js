@@ -90,8 +90,8 @@ const endGame = () =>{
     document.getElementById("buttons3").style.display="block";
     line(195,280,205,280,205,323,195,323);//plataforma izq abajo//
     line(290,280,300,280,300,323,290,323);//plataforma der abajo//
-    line(250,40,245,40,245,150,250,150)//cuerda de horca//
-    paintBrush.clearRect(205,270,86,10)
+    line(250,40,245,40,245,150,250,150);//cuerda de horca//
+    paintBrush.clearRect(205,270,86,10);
     
 }
 const goodGame = () =>{
@@ -148,14 +148,10 @@ function drawtoy(){
 const Init = document.querySelector(".button1");
 const Add = document.querySelector(".button2");
 const initialLausher = document.querySelector(".button4");
-const noGrafic_and_lausherInitial = document.querySelector(".button5");
+const noGrafic_and_lausherInitial = document.querySelector(".button8");
 const noGameOver_and_Grafic = document.querySelector(".button6");
 const noGoodGame_and_Grafic = document.querySelector(".button7");
 
-function noGraficLausher(){
-    document.getElementById("Grafic").style.display="none";
-    document.getElementById("addText").style.display="block";
-}
 function lausherText(){
     document.getElementById("buttons").style.display="none";
     document.getElementById("addText").style.display="block";
@@ -163,6 +159,7 @@ function lausherText(){
 function goLausher(){
     document.getElementById("buttons").style.display="block";
     document.getElementById("addText").style.display="none";
+    document.getElementById("Grafic").style.display="none";
 }
 function noLausher(){
     document.getElementById("buttons").style.display="none";
@@ -190,6 +187,6 @@ function noLausher(){
 Init.onclick = noLausher;
 Add.onclick = lausherText;
 initialLausher.onclick = goLausher;
-noGrafic_and_lausherInitial.onclick = noGraficLausher;
+noGrafic_and_lausherInitial.onclick = goLausher;
 noGameOver_and_Grafic.onclick = noLausher;
 noGoodGame_and_Grafic.onclick = noLausher;
