@@ -13,7 +13,6 @@ function addSentenses(){
     let sentensesWrite = Texts.value;
     let sentenses = sentensesWrite.toUpperCase();
     console.log(sentenses);
-    var ms;
     var opcion = confirm("Has agregado la palabra: " + sentenses);
     if(opcion == true){
         alert("Se agregó la palabra "+sentenses+" correctamente");
@@ -57,10 +56,10 @@ const correctLetter = letter =>{
     }
     if(hits===selectWord.length)goodGame();
 }
-const letterEvent = Event =>{
-    let newLetter = Event.key.toUpperCase();
-    if(newLetter.match(/^[a-zñ]$/i) && !usedletters.includes(newLetter)){
-        letterInput(newLetter);
+const letterEvent = () =>{
+    let NewLetter2 = textGame.value; 
+    if(NewLetter2.match(/^[a-zñ]$/i) && !usedletters.includes(NewLetter2)){
+        letterInput(NewLetter2);
     }
 }
 const letterInput = letter =>{
@@ -157,6 +156,7 @@ const textGame = document.querySelector("#textArea");
 function block(){
     document.getElementById("button5").style.display="none";
     document.getElementById("textArea").style.display="block";
+    textGame.focus();
 }
 function lausherText(){
     document.getElementById("buttons").style.display="none";
@@ -170,7 +170,6 @@ function goLausher(){
     document.getElementById("textArea").style.display="none";
     document.getElementById("button5").style.display="block";
     textGame.value="";
-    textGame.focus();
 }
 function noLausher(){
     document.getElementById("buttons").style.display="none";
@@ -179,6 +178,9 @@ function noLausher(){
     document.getElementById("buttons4").style.display="none";
     document.getElementById("buttons2").style.display="block";
     drawtoy();
+    document.getElementById("textArea").style.display="none";
+    document.getElementById("button5").style.display="block";
+    textGame.value="";
     line(247,270,205,270,205,280,247,280);//plataforma movil izq//
     line(248,270,290,270,290,280,248,280);//plataforma movil der//
     paintBrush.clearRect(195,280,10,43);
